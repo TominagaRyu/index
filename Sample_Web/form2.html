@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="form2.css">
+	<meta charset="UTF-8">
+	<title>アンケート画面</title>
+  <!-- <class>
+		body {
+            border: #0062cc;
+			background-color: #f5f5f5;
+			font-family: sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			color: green;
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			margin-top: 0;
+			text-align: center;
+		}
+
+		form {
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			margin: 0 auto;
+			max-width: 600px;
+			padding: 2rem;
+		}
+
+        label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+        label.radio{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+		input[type="text"],
+		input[type="email"],
+		select,
+		textarea {
+			border: 2px solid #ddd;
+			border-radius: 4px;
+			display: block;
+			font-size: 1rem;
+			margin-bottom: 1rem;
+			padding: 0.5rem;
+			width: 100%;
+		}
+
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #0077ff;
+			box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+			outline: none;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin-right: 0.5rem;
+		}
+
+		button[type="submit"] {
+			background-color: #0077ff;
+			border: none;
+			border-radius: 4px;
+			color: white;
+			cursor: pointer;
+			font-size: 1rem;
+			padding: 0.5rem 1rem;
+			transition: background-color 0.3s ease;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #0062cc;
+		}
+	</class> -->
+</head>
+<body>
+	<p class="h1 center">アンケート</p>
+	<form class="border" action="#" method="post">
+        <p></p>AxiZの研修をご利用いただき、誠にありがとうございます。<br>
+        以下の内容の記述及び送信をして頂けると幸いです。<br><p></p>
+
+		<label for="company">会社名　<span class="hissu">必須</span></label><br>
+		<input type="text" id="company" name="company" required><br><p>
+        </p>
+
+		<label for="name">お名前　<span class="hissu">必須</span></label><br>
+		<input type="text" id="name" name="name" required><br><p></p>
+
+		<label for="email">メールアドレス</label><br>
+		<input type="email" id="email" name="email"><br><p></p>
+
+		<label for="age">年齢</label><br>
+		<input type="number" id="age" name="age" min="0"><br><p></p>
+
+        <label>受講</label><br>
+        <label class="radio"><input type="radio" id="java" name="level" value="java">Java</label>
+        <label class="radio"><input type="radio" id="infula" name="level" value="infula">インフラ</label><br><p>
+        </p>
+
+        <label for="location">会場</label><br>
+		<select id="location" name="location">
+			<option value="">沖縄教室1</option>
+			<option value="location2">沖縄教室2</option>
+			<option value="location3">沖縄教室3</option>
+		</select><br><p></p>
+
+		<label>詳しく学びたい内容</label><br>
+		<input type="checkbox" id="interest1" name="interest[]" value="interest1">
+		<label for="interest1">ビジネスマナー</label><br>
+		<input type="checkbox" id="interest2" name="interest[]" value="interest2">
+		<label for="interest2">HTML/CSS</label><br>
+		<input type="checkbox" id="interest3" name="interest[]" value="interest3">
+		<label for="interest3">JavaScript</label><br>
+		<input type="checkbox" id="interest4" name="interest[]" value="interest4">
+		<label for="interest4">Java</label><br>
+		<input type="checkbox" id="interest5" name="interest[]" value="interest5">
+		<label for="interest5">データベース</label><br>
+		<input type="checkbox" id="interest6" name="interest[]" value="interest6">
+		<label for="interest6">Linux</label><p></p>
+
+		<label for="opinion">ご意見</label><br>
+		<textarea id="opinion" name="opinion"></textarea><p></p>
+
+		<button type="submit">送信</button><p></p>
+	</form>
+</body>
+</html>

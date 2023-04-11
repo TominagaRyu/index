@@ -1,0 +1,26 @@
+body{
+    background-image: url(bg_Argyle.jpg);
+    background-size: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.img{
+    border: 10px double rgb(223, 134, 134);
+}
+
+.red{
+    color: red;
+}
+
+.table, tr, td{
+    border-collapse: collapse;
+    border: 2.5px solid rgb(248, 7, 7);
+}
+
+.possition{
+    display: inline-block;
+    vertical-align: top;
+}

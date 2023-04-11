@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html type="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="nyuryoku.css">
+    <title>質問・感想フォーム</title>
+    <meta charset="UTF-8">
+</head>
+    
+<style>
+    body{
+        text-align: center;
+        margin-bottom: auto;
+        padding: 3px;
+    }
+
+    form{
+        border:1px solid purple;
+        border-radius: 5px;
+        background-color: white;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .border{
+        border:1px solid  rgb(14, 13, 13);
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    input[type="checkbox"] {
+        background-color: rgb(186, 186, 180);
+        margin-left: 2px; /* ボタンとラベルの間隔を狭める */
+        margin-right: 2px;
+    }
+
+
+</style>
+
+<body>
+    <h1>質問・感想フォーム</h1>
+    <form action="">
+        <p>氏名</p>
+        <input type="text" id="name" name="name">
+        
+        <p>性別</p>
+        <span class="border">
+            <input type="radio" id="male" name="gender" value="male"checked>
+            <label for="male">男性</label>
+          </span>
+          <span class="border">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女性</label>
+          </span>
+
+        <p>年齢</p>
+        <select name="年齢">
+            <option value="10age" selected >10代</option>
+            <option value="20age">20代</option>
+            <option value="30age">30代</option>
+            <option value="40age">40代</option>
+            <option value="50age">50代</option>
+        </select>
+
+        <p>今後見てみたいレシピ</p>
+        <span class="border">
+            <input type="checkbox" name="wa-foods">
+            <label for="wa-foods">和食</label>
+        </span>
+        
+        <span class="border">
+            <input type="checkbox" name="ch-foods">
+            <label for="ch-foods">中華</label>
+        </span>
+
+        <span class="border">
+            <input type="checkbox" name="yo-foods">
+            <label for="yo-foods">洋食</label>
+        </span>
+
+        <span class="border">
+            <input type="checkbox" name="italian">
+            <label for="Italian">イタリアン</label>
+        </span>
+        
+        <span class="border">
+            <input type="checkbox" name="sweets">
+            <label for="sweets">スイーツ</label>
+        </span>
+
+        <span class="border">
+            <input type="checkbox" name="others">
+            <label for="others">その他</label>
+        </span>
+
+        <p>自由コメント欄</p>
+        <textarea id="message" rows="4" cols="40" name="message">ご意見を入力ください</textarea><br>
+        
+        <button type="submit">送信</button>
+        <button type="submit">取り消し</button><br>
+   </form>
+</body>
+</html>
